@@ -1,4 +1,5 @@
 import { CountButton } from "./CountButton"
+import { Dialog } from "./Dialog"
 
 export interface GithubUserProps {
   username: string
@@ -15,6 +16,7 @@ export async function GithubUser({ username }: GithubUserProps) {
     <>
       <p>{JSON.stringify(user)}</p>
       <CountButton />
+      <Dialog />
     </>
   )
 }
